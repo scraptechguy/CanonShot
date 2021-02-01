@@ -112,6 +112,21 @@ pen.pendown()
 pen.goto(650, 0)
 pen.penup()
 
+t = " "
+
+for t in range(10):
+    t += 100
+    sc.update()
+
+    sq.goto(t, velocity_1)
+
+
+    txt.goto(sq.xcor() + 20, sq.ycor() + 10)
+    txt.write(
+        t * velocity_1,
+        font=("Courier", 11, "normal")
+    )
+
 
 
 
