@@ -1,7 +1,10 @@
 import turtle
 
-time_1 = int(input("Enter time: "))
-acceleration_1 = int(input("Enter acceleration: "))
+velocity_1 = int(input("Enter velocity 1: "))
+velocity_2 = int(input("Enter velocity 2: "))
+
+# iks = 
+# ypsilon = 
 
 sc = turtle.Screen()
 sc.bgcolor("black")
@@ -51,7 +54,6 @@ pen.goto(0, 300)
 pen.pendown()
 pen.goto(700, 300)
 pen.penup()
-
 
 pen.goto(0, 0)
 pen.pendown()
@@ -110,14 +112,7 @@ pen.pendown()
 pen.goto(650, 0)
 pen.penup()
 
-while True:
-    sc.update()
-
-    sq.goto(time_1, acceleration_1)
 
 
-    txt.goto(sq.xcor() + 20, sq.ycor() + 10)
-    txt.write(
-        time_1 * acceleration_1,
-        font=("Courier", 11, "normal")
-    )
+
+    
