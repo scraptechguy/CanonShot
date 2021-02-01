@@ -127,7 +127,8 @@ for t in range(10):
         font=("Courier", 11, "normal")
     )
 
-
+while True:
+    sc.update()
 
 
     
