@@ -1,10 +1,9 @@
 import turtle
 
-velocity_1 = int(input("Enter velocity 1: "))
-velocity_2 = int(input("Enter velocity 2: "))
+vx0 = int(input("Enter velocity 1: "))
+vy0 = int(input("Enter velocity 2: "))
 
-# iks = 
-# ypsilon = 
+
 
 sc = turtle.Screen()
 sc.bgcolor("black")
@@ -23,112 +22,12 @@ sq.shape("square")
 sq.color("white")
 
 
-pen = turtle.Turtle()
-pen.color("white")
-pen.hideturtle()
+pen1 = turtle.Turtle()
+pen1.color("white")
+pen1.hideturtle()
 
-pen.goto(0, 0)
-pen.goto(700, 0)
-pen.penup()
-pen.goto(0, 50)
-pen.pendown()
-pen.goto(700, 50)
-pen.penup()
-pen.goto(0, 100)
-pen.pendown()
-pen.goto(700, 100)
-pen.penup()
-pen.goto(0, 150)
-pen.pendown()
-pen.goto(700, 150)
-pen.penup()
-pen.goto(0, 200)
-pen.pendown()
-pen.goto(700, 200)
-pen.penup()
-pen.goto(0, 250)
-pen.pendown()
-pen.goto(700, 250)
-pen.penup()
-pen.goto(0, 300)
-pen.pendown()
-pen.goto(700, 300)
-pen.penup()
-
-pen.goto(0, 0)
-pen.pendown()
-pen.goto(0, 350)
-pen.penup()
-pen.goto(50, 350)
-pen.pendown()
-pen.goto(50, 0)
-pen.penup()
-pen.goto(100, 350)
-pen.pendown()
-pen.goto(100, 0)
-pen.penup()
-pen.goto(150, 350)
-pen.pendown()
-pen.goto(150, 0)
-pen.penup()
-pen.goto(200, 350)
-pen.pendown()
-pen.goto(200, 0)
-pen.penup()
-pen.goto(250, 350)
-pen.pendown()
-pen.goto(250, 0)
-pen.penup()
-pen.goto(300, 350)
-pen.pendown()
-pen.goto(300, 0)
-pen.penup()
-pen.goto(350, 350)
-pen.pendown()
-pen.goto(350, 0)
-pen.penup()
-pen.goto(400, 350)
-pen.pendown()
-pen.goto(400, 0)
-pen.penup()
-pen.goto(450, 350)
-pen.pendown()
-pen.goto(450, 0)
-pen.penup()
-pen.goto(500, 350)
-pen.pendown()
-pen.goto(500, 0)
-pen.penup()
-pen.goto(550, 350)
-pen.pendown()
-pen.goto(550, 0)
-pen.penup()
-pen.goto(600, 350)
-pen.pendown()
-pen.goto(600, 0)
-pen.penup()
-pen.goto(650, 350)
-pen.pendown()
-pen.goto(650, 0)
-pen.penup()
-
-t = " "
-
-for t in range(10):
-    t += 100
-    sc.update()
-
-    sq.goto(t, velocity_1)
-
-
-    txt.goto(sq.xcor() + 20, sq.ycor() + 10)
-    txt.write(
-        t * velocity_1,
-        font=("Courier", 11, "normal")
-    )
-
-while True:
-    sc.update()
-
+pen2 = turtle.Turtle()
+pen2.color("white")
+pen2.hideturtle()
 
     
