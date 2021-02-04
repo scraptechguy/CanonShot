@@ -49,3 +49,9 @@ for i in range(29):
     pen2.left(90)
     pen2.forward(25)
     pen2.left(90)
+
+t = " "
+x0 = 0
+y0 = 0
+g = 9.8
+n = 1000
