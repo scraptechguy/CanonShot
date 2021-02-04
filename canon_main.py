@@ -55,3 +55,22 @@ x0 = 0
 y0 = 0
 g = 9.8
 n = 1000
+
+for i in range(n):
+    t = float(i)/n * 10
+    iks = x0 + vx0 * t 
+    ypsilon = y0 + vy0 * t - 0.5 * g * t * t
+
+    sq.goto(iks, ypsilon)
+    sc.update()
+
+
+    txt.goto(sq.xcor() + 20, sq.ycor() + 10)
+    print(iks)
+    print(ypsilon)
+
+    if sq.ycor() < 0:
+        break
+
+while True:
+    sc.update()
