@@ -29,3 +29,23 @@ pen1.hideturtle()
 pen2 = turtle.Turtle()
 pen2.color("white")
 pen2.hideturtle()
+
+
+for i in range(15):
+    pen1.forward(700)
+    pen1.right(180)
+    pen1.forward(700)
+    pen1.right(90)
+    pen1.forward(25)
+    pen1.right(90)
+
+
+pen2.left(90)
+
+for i in range(29):
+    pen2.forward(350)
+    pen2.left(180)
+    pen2.forward(350)
+    pen2.left(90)
+    pen2.forward(25)
+    pen2.left(90)
