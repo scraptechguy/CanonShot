@@ -122,3 +122,48 @@ for i in range(28):
     )
     grid_x += 25
 
+    # Placing coordinates on screen
+txt.goto(-600, 250)
+
+# Defining varuables used in the equations below
+t = " "
+# Distance from position 0, 0
+x0 = 0
+# Height above the ground 
+y0 = 0
+# Gravitional acceleration 
+g = 9.8
+# In range of ... variable
+n = 100000
+
+# For loop for displaying flight
+for i in range(n):
+    # updating time in each cycle 
+    t = float(i)/n * 1000
+    # Equations of motion of a body in a gravitational field
+    iks = x0 + vx0 * t 
+    ypsilon = y0 + vy0 * t - 0.5 * g * t * t
+
+    # Movement of the cannon ball
+    sq.goto(iks, ypsilon)
+
+    sqy.goto(0, sq.ycor())
+    sqx.goto(sq.xcor(), 0)
+
+    # Displaying x and y coordinates 
+    txt.clear()
+    txt.write(
+        "Distance: {}     \nHeight: {}      ".format(sq.xcor(), sq.ycor()),
+        font=("Courier", 20, "normal")
+    )
+
+    # Stopping the cycle when the ball hit the ground 
+    if sq.ycor() < 0:
+        break
+
+    # Refreshing the screen
+    sc.update()
+
+# Keeping the screen going 
+while True:
+    sc.update()
