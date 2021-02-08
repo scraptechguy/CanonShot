@@ -11,10 +11,26 @@ sc.bgcolor("black")
 sc.setup(width= 1280, height= 720)
 sc.tracer(0)
 
-# Text-writing pen
+# Text-writing pens
+
+# y coordinates 
+txty = turtle.Turtle()
+txty.speed(0)
+txty.color("white")
+txty.penup()
+txty.hideturtle()
+
+# x coordinates
+txtx = turtle.Turtle()
+txtx.speed(0)
+txtx.color("white")
+txtx.penup()
+txtx.hideturtle()
+
+# x and y coordinates on the left 
 txt = turtle.Turtle()
 txt.speed(0)
-txt.color("red")
+txt.color("white")
 txt.penup()
 txt.hideturtle()
 
@@ -24,73 +40,42 @@ sq.speed(0)
 sq.shape("square")
 sq.color("white")
 
+# Squeare representing hight
+sqy = turtle.Turtle()
+sqy.speed(0)
+sqy.shape("square")
+sqy.color("red")
+sqy.shapesize(0.3, 0.3)
+sqy.penup()
+
+# Square representing length
+sqx = turtle.Turtle()
+sqx.speed(0)
+sqx.shape("square")
+sqx.color("red")
+sqx.shapesize(0.3, 0.3)
+sqx.penup()
+
+
 
 # Grid-writing pens
 
 # Horizontal
-pen1 = turtle.Turtle()
-pen1.color("white")
-pen1.hideturtle()
+peny = turtle.Turtle()
+peny.color("white")
+peny.hideturtle()
 
 # Vertical
-pen2 = turtle.Turtle()
-pen2.color("white")
-pen2.hideturtle()
+penx = turtle.Turtle()
+penx.color("white")
+penx.hideturtle()
 
 
 # Horizontal grid
 for i in range(15):
-    pen1.forward(700)
-    pen1.right(180)
-    pen1.forward(700)
-    pen1.right(90)
-    pen1.forward(25)
-    pen1.right(90)
-
-
-# Vertical grid
-pen2.left(90)
-
-for i in range(29):
-    pen2.forward(350)
-    pen2.left(180)
-    pen2.forward(350)
-    pen2.left(90)
-    pen2.forward(25)
-    pen2.left(90)
-
-# Defining varuables used in the equations below
-t = " "
-# Distance from position 0, 0
-x0 = 0
-# Height above the ground 
-y0 = 0
-# Gravitional acceleration 
-g = 9.8
-# In range of ... variable
-n = 10000
-
-# For loop for displaying flight
-for i in range(n):
-    # updating time in each cycle 
-    t = float(i)/n * 100
-    # Equations of motion of a body in a gravitational field
-    iks = x0 + vx0 * t 
-    ypsilon = y0 + vy0 * t - 0.5 * g * t * t
-
-    # Movement of the cannon ball
-    sq.goto(iks, ypsilon)
-    # Refreshing the screen
-    sc.update()
-
-    # Displaying x and y coordinates 
-    print(iks)
-    print(ypsilon)
-
-    # Stopping the cycle when the ball hit the ground 
-    if sq.ycor() < 0:
-        break
-
-# Keeping the screen going 
-while True:
-    sc.update()
+    peny.forward(700)
+    peny.right(180)
+    peny.forward(700)
+    peny.right(90)
+    peny.forward(25)
+    peny.right(90)
