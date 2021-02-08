@@ -79,3 +79,46 @@ for i in range(15):
     peny.right(90)
     peny.forward(25)
     peny.right(90)
+
+    
+
+# Vertical grid
+penx.left(90)
+
+for i in range(29):
+    penx.forward(350)
+    penx.left(180)
+    penx.forward(350)
+    penx.left(90)
+    penx.forward(25)
+    penx.left(90)
+
+grid_y = 25
+
+txty.right(180)
+txty.forward(30)
+txty.right(90)
+
+# Horizontal grid
+for i in range(14):
+    txty.forward(25)
+    txty.write(
+        grid_y,
+        font=("Courier", 10)
+    )
+    grid_y += 25
+
+grid_x = 25
+
+txtx.right(90)
+txtx.forward(20)
+txtx.left(90)
+
+for i in range(28):
+    txtx.forward(25)
+    txtx.write(
+        grid_x,
+        font=("Courier", 7)
+    )
+    grid_x += 25
+
