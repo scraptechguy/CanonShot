@@ -1,8 +1,16 @@
 import turtle
 
 # Input of two vector velocities 
-vx0 = int(input("Enter vx0: "))
-vy0 = int(input("Enter vy0: "))
+while True:
+    vx0 = input("Enter vx0: ")
+    vy0 = input("Enter vy0: ")
+
+    try:
+        vx0 = int(vx0)
+        vy0 = int(vy0)
+        break
+    except ValueError:
+        pass
 
 
 # Screen parameters
@@ -80,7 +88,6 @@ for i in range(15):
     peny.forward(25)
     peny.right(90)
 
-    
 
 # Vertical grid
 penx.left(90)
@@ -122,7 +129,7 @@ for i in range(28):
     )
     grid_x += 25
 
-    # Placing coordinates on screen
+# Placing coordinates
 txt.goto(-600, 250)
 
 # Defining varuables used in the equations below
@@ -153,7 +160,7 @@ for i in range(n):
     # Displaying x and y coordinates 
     txt.clear()
     txt.write(
-        "Distance: {}     \nHeight: {}      ".format(sq.xcor(), sq.ycor()),
+        "Distance: {}            \nHeight: {}               ".format(sq.xcor(), sq.ycor()),
         font=("Courier", 20, "normal")
     )
 
@@ -166,4 +173,5 @@ for i in range(n):
 
 # Keeping the screen going 
 while True:
+
     sc.update()
