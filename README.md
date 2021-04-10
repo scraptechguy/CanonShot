@@ -8,4 +8,5 @@ one pixel is equal to one meter in real life,
 velocities are in meters per second
 
 program should run without any problems after pasting to any code editor (i.e. VS Code, Sublime text, etc.) with Python 3 installed on your computer
+
 formating issues may appear when pasting directly to terminal
