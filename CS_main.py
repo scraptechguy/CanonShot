@@ -17,6 +17,9 @@ while True:
     except ValueError:
         pass
 
+vx0 = int(vx0)
+vy0 = int(vy0)
+    
 
 # Screen parameters
 sc = turtle.Screen()
