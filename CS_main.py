@@ -7,6 +7,11 @@ while True:
 
     try:
         vx0 = int(vx0)
+        break
+    except ValueError:
+        pass
+
+    try:
         vy0 = int(vy0)
         break
     except ValueError:
@@ -132,7 +137,7 @@ for i in range(28):
 # Placing coordinates
 txt.goto(-600, 250)
 
-# Defining varuables used in the equations below
+# Defining variables used in the equations below
 t = " "
 # Distance from position 0, 0
 x0 = 0
@@ -142,6 +147,9 @@ y0 = 0
 g = 9.8
 # In range of ... variable
 n = 100000
+
+# Definition of list that stores every achieved height (can't be in the loop, would overwrite itself)
+list_of_heights = []
 
 # For loop for displaying flight
 for i in range(n):
@@ -154,13 +162,22 @@ for i in range(n):
     # Movement of the cannon ball
     sq.goto(iks, ypsilon)
 
+
+    #movement of red indicator squares
     sqy.goto(0, sq.ycor())
     sqx.goto(sq.xcor(), 0)
+
+
+    # appending every achieved height to one list and then searching for the highest number (highest altitude)
+    height = sq.ycor()
+    list_of_heights.append(height)
+    top_height = int(max(list_of_heights))
+
 
     # Displaying x and y coordinates 
     txt.clear()
     txt.write(
-        "Distance: {}            \nHeight: {}               ".format(sq.xcor(), sq.ycor()),
+        "Distance: {} meters\nHeight: {} meters\n\nTop height: {} meters".format(int(sq.xcor()), int(sq.ycor()), top_height),
         font=("Courier", 20, "normal")
     )
 
@@ -170,6 +187,8 @@ for i in range(n):
 
     # Refreshing the screen
     sc.update()
+
+
 
 # Keeping the screen going 
 while True:
