@@ -184,9 +184,13 @@ x0 = 0
 y0 = 0
 
 
-# Gravitional acceleration 
+# g as always is gravitional acceleration on Earth
+
 g = 9.8
-# In range of ... variable
+
+
+# in range of ... variable defines how precise the path written by the canon ball will be 
+
 n = 100000
 
 # Definition of list that stores every achieved height (can't be in the loop, would overwrite itself)
