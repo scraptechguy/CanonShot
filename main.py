@@ -193,27 +193,43 @@ g = 9.8
 
 n = 100000
 
-# Definition of list that stores every achieved height (can't be in the loop, would overwrite itself)
+
+# list that stores every achieved height (can't be in the loop, would overwrite itself) and is then searched for the heighest number to 
+# display maximum height
+
 list_of_heights = []
 
-# For loop for displaying flight
+
+# for loop that takes care of displaying the flight of the canon ball
+
 for i in range(n):
-    # updating time in each cycle 
+    
+    
+    # t (time) gets updated each cycle 
+    
     t = float(i)/n * 1000
-    # Equations of motion of a body in a gravitational field
+    
+    
+    # coordinates are defined by equations of motion of a body in a gravitational field
+    
     iks = x0 + vx0 * t 
     ypsilon = y0 + vy0 * t - 0.5 * g * t * t
 
-    # Movement of the cannon ball
+    
+    # coordinates of the cannon ball are updated each cycle -> it moves on the screen
+    
     sq.goto(iks, ypsilon)
 
 
-    #movement of red indicator squares
+    # coordinates the two red indicator squares get also updated each cycle -> they move
+    
     sqy.goto(0, sq.ycor())
     sqx.goto(sq.xcor(), 0)
 
 
-    # appending every achieved height to one list and then searching for the highest number (highest altitude)
+    # these 3 lines append every achieved height to list_of_heights and then the list is searched for the highest number (highest altitude)
+    # top_height is updated each cycle -> top_height has the same value as height on the way up, when is the top reached, it stops
+    
     height = sq.ycor()
     list_of_heights.append(height)
     top_height = int(max(list_of_heights))
