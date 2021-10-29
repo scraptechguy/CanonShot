@@ -80,7 +80,9 @@ sqy.color("red")
 sqy.shapesize(0.3, 0.3)
 sqy.penup()
 
-# Square representing length
+
+# square that represents length on x axes
+
 sqx = turtle.Turtle()
 sqx.speed(0)
 sqx.shape("square")
