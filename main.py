@@ -255,8 +255,8 @@ for i in range(n):
     sc.update()
 
 
+# the main screen would shut down after the end of the for loop -> this keeps the screen going for ever :)
 
-# Keeping the screen going 
 while True:
 
     sc.update()
