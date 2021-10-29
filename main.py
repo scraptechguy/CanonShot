@@ -71,7 +71,7 @@ sq.shape("square")
 sq.color("white")
 
 
-# squeare that represents hight on y axes
+# red squeare that represents hight on y axes
 
 sqy = turtle.Turtle()
 sqy.speed(0)
@@ -81,7 +81,7 @@ sqy.shapesize(0.3, 0.3)
 sqy.penup()
 
 
-# square that represents length on x axes
+# red square that represents length on x axes
 
 sqx = turtle.Turtle()
 sqx.speed(0)
