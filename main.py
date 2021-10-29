@@ -167,12 +167,23 @@ for i in range(28):
 
 txt.goto(-600, 250)
 
-# Defining variables used in the equations below
+
+# declaring variables used in the equations below
+# t is time, get's updated each cycle in the for loop below (t AS SEEN BELOW IS NOT REAL TIME)
+
 t = " "
-# Distance from position 0, 0
+
+
+# x0 is the horizontal distance from position [0; 0]
+
 x0 = 0
-# Height above the ground 
+
+
+# y0 is the vertical distance from position [0; 0]
+
 y0 = 0
+
+
 # Gravitional acceleration 
 g = 9.8
 # In range of ... variable
