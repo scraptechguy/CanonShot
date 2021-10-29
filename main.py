@@ -243,11 +243,15 @@ for i in range(n):
         font=("Courier", 20, "normal")
     )
 
-    # Stopping the cycle when the ball hit the ground 
+    
+    # if that stops the loop when the ball hits the ground (y == 0) 
+    
     if sq.ycor() < 0:
         break
 
-    # Refreshing the screen
+        
+    # this refreshes the screen each cycle
+    
     sc.update()
 
 
