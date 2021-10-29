@@ -91,21 +91,19 @@ sqx.shapesize(0.3, 0.3)
 sqx.penup()
 
 
+# pens that draw horizontal and verticals parts of the grid
 
-# Grid-writing pens
-
-# Horizontal
 peny = turtle.Turtle()
 peny.color("white")
 peny.hideturtle()
 
-# Vertical
 penx = turtle.Turtle()
 penx.color("white")
 penx.hideturtle()
 
 
-# Horizontal grid
+# for loop used to draw horizontal (y axes) of the grid
+
 for i in range(15):
     peny.forward(700)
     peny.right(180)
@@ -115,7 +113,9 @@ for i in range(15):
     peny.right(90)
 
 
-# Vertical grid
+# for loop used to draw vertical (x axes) of the grid 
+# (penx.left(90) because turtle's forward is up ^ by default)
+
 penx.left(90)
 
 for i in range(29):
