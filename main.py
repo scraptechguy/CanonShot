@@ -228,14 +228,15 @@ for i in range(n):
 
 
     # these 3 lines append every achieved height to list_of_heights and then the list is searched for the highest number (highest altitude)
-    # top_height is updated each cycle -> top_height has the same value as height on the way up, when is the top reached, it stops
+    # top_height is updated each cycle -> top_height has the same value as sq.ycor() on the way up, when is the top reached, it stops on the highest spot
     
     height = sq.ycor()
     list_of_heights.append(height)
     top_height = int(max(list_of_heights))
 
 
-    # Displaying x and y coordinates 
+    # pen that writes x and y coordinates (updated each cycle) to the left top corner
+    
     txt.clear()
     txt.write(
         "Distance: {} meters\nHeight: {} meters\n\nTop height: {} meters".format(int(sq.xcor()), int(sq.ycor()), top_height),
