@@ -1,19 +1,29 @@
+# library turtle is used for graphics 
+
 import turtle
 
-# Input of two vector velocities 
+
+# while loop to secure right inputs. Inputs have to be integers, if they're not, user is asked to input different value
+
 while True:
+
+    
+    # two verctor velocities get declared and are assigned values by the user
+    
     vx0 = input("Enter vx0: ")
     vy0 = input("Enter vy0: ")
 
     try:
         vx0 = int(vx0)
         break
+        
     except ValueError:
         pass
 
     try:
         vy0 = int(vy0)
         break
+        
     except ValueError:
         pass
 
@@ -21,7 +31,8 @@ vx0 = int(vx0)
 vy0 = int(vy0)
     
 
-# Screen parameters
+# parameters of the main screen
+
 sc = turtle.Screen()
 sc.bgcolor("black")
 sc.setup(width= 1280, height= 720)
