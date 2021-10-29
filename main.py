@@ -126,13 +126,16 @@ for i in range(29):
     penx.forward(25)
     penx.left(90)
 
+
+# for loop that writes y values next to the grid. One square is equal to 25 meters (pixels)
+# texty is moved to start at the right spot
+    
 grid_y = 25
 
 txty.right(180)
 txty.forward(30)
 txty.right(90)
 
-# Horizontal grid
 for i in range(14):
     txty.forward(25)
     txty.write(
@@ -141,6 +144,9 @@ for i in range(14):
     )
     grid_y += 25
 
+    
+# for loop that writes x values next to the grid. One square is also equal to 25 meters (pixels)  
+  
 grid_x = 25
 
 txtx.right(90)
