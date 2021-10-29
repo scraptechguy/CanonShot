@@ -128,7 +128,7 @@ for i in range(29):
 
 
 # for loop that writes y values next to the grid. One square is equal to 25 meters (pixels)
-# texty is moved to start at the right spot
+# txty is moved to start at the right spot (center)
     
 grid_y = 25
 
@@ -146,6 +146,7 @@ for i in range(14):
 
     
 # for loop that writes x values next to the grid. One square is also equal to 25 meters (pixels)  
+# txtx is moved to the right place (center)
   
 grid_x = 25
 
@@ -161,7 +162,9 @@ for i in range(28):
     )
     grid_x += 25
 
-# Placing coordinates
+    
+# txt is moved to these coordinates to write height and lenght there 
+
 txt.goto(-600, 250)
 
 # Defining variables used in the equations below
