@@ -38,36 +38,41 @@ sc.bgcolor("black")
 sc.setup(width= 1280, height= 720)
 sc.tracer(0)
 
-# Text-writing pens
 
-# y coordinates 
+# text-writing pens that write x and y coordinates 
+
 txty = turtle.Turtle()
 txty.speed(0)
 txty.color("white")
 txty.penup()
 txty.hideturtle()
 
-# x coordinates
 txtx = turtle.Turtle()
 txtx.speed(0)
 txtx.color("white")
 txtx.penup()
 txtx.hideturtle()
 
-# x and y coordinates on the left 
+
+# text-writing pen that notes coordinates on the left 
+
 txt = turtle.Turtle()
 txt.speed(0)
 txt.color("white")
 txt.penup()
 txt.hideturtle()
 
-# Square representing cannon ball
+
+# objects representing the cannon ball
+
 sq = turtle.Turtle()
 sq.speed(0)
 sq.shape("square")
 sq.color("white")
 
-# Squeare representing hight
+
+# squeare that represents hight on y axes
+
 sqy = turtle.Turtle()
 sqy.speed(0)
 sqy.shape("square")
