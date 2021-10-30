@@ -1,4 +1,4 @@
-# This program simulates the flight of a cannonball shot.
+# This program simulates the flight of a cannonball shot
 
 + To run this yourself, review <a href="https://github.com/scraptechguy/CanonShot/blob/main/requirements.md" target="_blank">requirements.md</a> file
 
