@@ -2,4 +2,8 @@ You should be fine after pasting <a href="https://github.com/scraptechguy/CanonS
 
 ## Required libraries: 
 
-+ Python Turtle
++ <a href="https://pypi.org/project/PythonTurtle/" target="_blank">Python Turtle</a>, if you don't have it yet, install it by:
+
+      pip install PythonTurtle
+
+
