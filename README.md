@@ -6,7 +6,7 @@
 
 User inputs two vector velocities (in m/s), vertical (y) and horizontal (x). These two vectors get added together following the laws of vector addition. 
 
-<img src="https://user-images.githubusercontent.com/75474651/139541508-45e718ff-3df5-4c71-a7cb-4b730dd8ec7d.jpg" width="100">
+<img src="https://user-images.githubusercontent.com/75474651/139541508-45e718ff-3df5-4c71-a7cb-4b730dd8ec7d.jpg" width="1000">
 
 
 The cannon ball moves accordingly to the resulting vector velocity. Simulation is NOT in real time though distances traveled (upward and forward) are accurate. One pixel on screen represents one meter in real life -> instant coordinates of the cannon ball are coordinates the ball would have in the real world ([100; 150] -> the cannon ball is 100 meters above the ground and 150 meters far from the point from which it was shot)
