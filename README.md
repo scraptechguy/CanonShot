@@ -4,7 +4,19 @@
 
 ## How does it work?
 
-User inputs two vector velocities (in m/s), vertical (y) and horizontal (x). These two vectors get added together following the laws of vector addition. The cannon ball moves accordingly to the resulting vector velocity. Simulation is NOT in real time though distances traveled (upward and forward) are accurate. One pixel on screen represents one meter in real life -> instant coordinates of the cannon ball are coordinates the ball would have in the real world ([100; 150] -> the cannon ball is 100 meters above the ground and 150 meters far from the point from which it was shot)
+User inputs two vector velocities (in m/s), vertical (y) and horizontal (x). These two vectors get added together following the laws of vector addition. 
+    
+^                           ^ ^
+|                          /  |
+|                         /   |
+|            ...         /    |
+|                       /     |
+|                      /      |
+ ------>              ------>
+ 
+(professional ASCII art)
+ 
+The cannon ball moves accordingly to the resulting vector velocity. Simulation is NOT in real time though distances traveled (upward and forward) are accurate. One pixel on screen represents one meter in real life -> instant coordinates of the cannon ball are coordinates the ball would have in the real world ([100; 150] -> the cannon ball is 100 meters above the ground and 150 meters far from the point from which it was shot)
 
 + Note: Air resistance is NOT added (yet, still on it!) thus distances are accurate to the point when air is added 
 
