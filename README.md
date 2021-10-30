@@ -7,11 +7,17 @@
 User inputs two vector velocities (in m/s), vertical (y) and horizontal (x). These two vectors get added together following the laws of vector addition. 
     
 ^                           ^ ^
+
 |                          /  |
+
 |                         /   |
+
 |            ...         /    |
+
 |                       /     |
+
 |                      /      |
+
  ------>              ------>
  
 (professional ASCII art)
