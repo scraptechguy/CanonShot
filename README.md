@@ -27,3 +27,9 @@ We're shooting from point with coordinates [0: 0]. White square (the cannon ball
 Program is written in Python using <a href="https://pypi.org/project/PythonTurtle/" target="_blank">Python Turtle</a> library. 
 
 ### Code scheme
+
++ User input on two vector velocities; vx0 and vy0
++ Definition of all the objects on the screen (screen included)
++ Using equations for flight in a gravitational field to make the cannon ball move accordingly 
++ While loop where the cannon ball coordinates and everything else gets updated. This while loop has break when y coordinate of the cannon ball is lower than 0
++ Another while loop to keeep the screen going after the first while loop finishes (cannon ball hits the ground) 
