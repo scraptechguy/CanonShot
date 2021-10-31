@@ -24,9 +24,9 @@ We're shooting from point with coordinates [0: 0]. White square (the cannon ball
 
 ## Understand the code
 
-Program is written in Python using <a href="https://pypi.org/project/PythonTurtle/" target="_blank">Python Turtle</a> library. 
+Program is written in Python 3.10 using <a href="https://pypi.org/project/PythonTurtle/" target="_blank">Python Turtle</a> library. 
 
-### Code scheme
+### Code structure
 
 + User input on two vector velocities; vx0 and vy0
 + Definition of all the objects on the screen (screen included)
