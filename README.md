@@ -16,8 +16,10 @@ The cannon ball moves accordingly to the resulting vector velocity. Simulation i
 
 + Note: Air resistance is NOT added (yet, still on it!) thus distances are accurate to the point when air is added 
 
+
 ## Understand what's on the screen
 
 We're shooting from point with coordinates [0: 0]. White square (the cannon ball) flies from that point to the right. One square on the grid has dimensions 25 x 25 pixels (meters). In the left top corner is information about the position of the cannon ball (distance, height, and top height). Small red squares represent the movement of the cannon ball on each axes. 
 
 
+## Understand the code
