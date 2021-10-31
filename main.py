@@ -191,7 +191,7 @@ g = 9.8
 
 # in range of ... variable defines how precise the path written by the canon ball will be 
 
-n = 100000
+n = 10000
 
 
 # list that stores every achieved height (can't be in the loop, would overwrite itself) and is then searched for the heighest number to 
