@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # library turtle is used for graphics 
 
 import turtle
