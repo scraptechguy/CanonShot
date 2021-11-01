@@ -1,6 +1,6 @@
 # This program simulates the flight of a cannonball shot
 
-+ To run this yourself, review <a href="https://github.com/scraptechguy/CanonShot/blob/main/requirements.md" target="_blank">requirements.md</a> file and do the following: 
++ To run this yourself, review <a href="https://github.com/scraptechguy/CanonShot/blob/main/requirements.md" target="_blank">requirements.md</a> file and do the following in terminal: 
 
       pip install -r requirements.txt
       python main.py
