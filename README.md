@@ -2,12 +2,13 @@
 
 + To run this yourself, review <a href="https://github.com/scraptechguy/CanonShot/blob/main/requirements.md" target="_blank">requirements.md</a> file and do the following in terminal: 
 
+      ```
       cd <path of the project on your computer>
-      
-      
+      ```
+      ```
       pip install -r requirements.txt
       python main.py
-
+      ```
 ## How does it work?
 
 User inputs two vector velocities (in m/s), vertical (y) and horizontal (x). These two vectors get added together following the laws of <a href="https://www.physicsclassroom.com/Class/vectors/U3L1b.cfm" target="_blank">vector addition</a>. 
