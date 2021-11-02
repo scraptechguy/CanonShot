@@ -2,11 +2,11 @@
 
 + To run this yourself, review <a href="https://github.com/scraptechguy/CanonShot/blob/main/requirements.md" target="_blank">requirements.md</a> file and do the following in terminal: 
 
-```
+```zh
 cd <path of the project on your computer>
 ```
 
-```
+```zh
 pip install -r requirements.txt
 python main.py
 ```
@@ -53,11 +53,39 @@ Program is written in Python 3.10 using <a href="https://pypi.org/project/Python
     sc.tracer(0)
 ```
 
++ Drawing the grid with axis numbers 
+
+```py
+    for i in range(15):
+        peny.forward(700)
+        peny.right(180)
+        peny.forward(700)
+        peny.right(90)
+        peny.forward(25)
+        peny.right(90)
+```
+
++ For loop where the cannon ball coordinates and everything else gets updated. This while loop has break when y coordinate of the cannon ball is lower than 0
+
+```py
+    for i in range(n):
+```
+
 + Using equations for flight in a gravitational field to make the cannon ball move accordingly
 
 ```py
-
+    iks = x0 + vx0 * t 
+    ypsilon = y0 + vy0 * t - 0.5 * g * t * t
+    
+    sq.goto(iks, ypsilon)
+    
+    sc.update()
 ```
 
-+ While loop where the cannon ball coordinates and everything else gets updated. This while loop has break when y coordinate of the cannon ball is lower than 0
-+ Another while loop to keeep the screen going after the first while loop finishes (cannon ball hits the ground) 
++ While loop to keeep the screen going after the first while loop finishes (cannon ball hits the ground) 
+
+```py
+    while True:
+
+        sc.update()
+```
