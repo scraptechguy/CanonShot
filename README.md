@@ -38,6 +38,12 @@ Program is written in Python 3.10 using <a href="https://pypi.org/project/Python
 ### Code structure
 
 + User input on two vector velocities; vx0 and vy0
+
+```py
+    vx0 = input("Enter vx0: ")
+    vy0 = input("Enter vy0: ")
+```
+
 + Definition of all the objects on the screen (screen included)
 + Using equations for flight in a gravitational field to make the cannon ball move accordingly 
 + While loop where the cannon ball coordinates and everything else gets updated. This while loop has break when y coordinate of the cannon ball is lower than 0
