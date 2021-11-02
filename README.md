@@ -2,11 +2,11 @@
 
 + To run this yourself, review <a href="https://github.com/scraptechguy/CanonShot/blob/main/requirements.md" target="_blank">requirements.md</a> file and do the following in terminal: 
 
-```zh
+```sh
 cd <path of the project on your computer>
 ```
 
-```zh
+```sh
 pip install -r requirements.txt
 python main.py
 ```
