@@ -74,12 +74,12 @@ Program is written in Python 3.10 using <a href="https://pypi.org/project/Python
 + Using equations for flight in a gravitational field to make the cannon ball move accordingly
 
 ```py
-    iks = x0 + vx0 * t 
-    ypsilon = y0 + vy0 * t - 0.5 * g * t * t
-    
-    sq.goto(iks, ypsilon)
-    
-    sc.update()
+        iks = x0 + vx0 * t 
+        ypsilon = y0 + vy0 * t - 0.5 * g * t * t
+
+        sq.goto(iks, ypsilon)
+
+        sc.update()
 ```
 
 + While loop to keeep the screen going after the first while loop finishes (cannon ball hits the ground) 
