@@ -6,6 +6,7 @@ You should be fine after cloning the project to your computer and running <a hre
  
 If you don't have it yet, install it by:
 
-      pip install PythonTurtle
-
+```sh
+    pip install PythonTurtle
+```
 
