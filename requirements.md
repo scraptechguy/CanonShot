@@ -1,4 +1,4 @@
-You should be fine after cloning the project to your computer and running 
++ You should be fine after cloning the project to your computer and running 
 <a href="ttps://github.com/scraptechguy/CanonShot/blob/main/main.py" target="_blank">main.py</a> in a terminal that's capable of running Python 3.8 or later
 
 ## Required libraries: 
