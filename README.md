@@ -89,3 +89,5 @@ Program is written in Python 3.10 using <a href="https://pypi.org/project/Python
 
         sc.update()
 ```
+
+And that's it! 
