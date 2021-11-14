@@ -6,6 +6,8 @@
 cd <path of the project on your computer>
 ```
 
+And then:
+
 ```sh
 pip install -r requirements.txt
 python main.py
