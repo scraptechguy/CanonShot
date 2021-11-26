@@ -13,6 +13,12 @@ pip install -r requirements.txt
 python main.py
 ```
 
+### Table of contents
+
++ <a href=""></a>
++ <a href=""></a>
++ <a href=""></a>
+
 ## How does it work?
 
 User inputs two vector velocities (in m/s), vertical (y) and horizontal (x). These two vectors get added together following the laws of <a href="https://www.physicsclassroom.com/Class/vectors/U3L1b.cfm" target="_blank">vector addition</a>. 
