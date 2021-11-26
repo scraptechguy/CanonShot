@@ -45,7 +45,7 @@ Program is written in Python 3.10 using <a href="https://pypi.org/project/Python
 
 ### Code structure with snippets of code
 
-+ User input on two vector velocities; vx0 and vy0
++ User input of two vector velocities; vx0 and vy0
 
 ```py
     vx0 = input("Enter vx0: ")
@@ -73,7 +73,7 @@ Program is written in Python 3.10 using <a href="https://pypi.org/project/Python
         peny.right(90)
 ```
 
-+ For loop where the cannon ball coordinates and everything else gets updated. This while loop has break when y coordinate of the cannon ball is lower than 0
++ For loop where the cannon ball coordinates and everything else gets updated. This while loop has break when y coordinate of the cannon ball is smaller than 0
 
 ```py
     for i in range(n):
