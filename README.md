@@ -15,9 +15,9 @@ python main.py
 
 ### Table of contents
 
-+ <a href=""></a>
-+ <a href=""></a>
-+ <a href=""></a>
++ <a href="https://github.com/scraptechguy/CanonShot#how-does-it-work">How does it work?</a>
++ <a href="">Understand what's on the screen</a>
++ <a href="">Understand the code</a>
 
 ## How does it work?
 
